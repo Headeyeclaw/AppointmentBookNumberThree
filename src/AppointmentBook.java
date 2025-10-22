@@ -22,6 +22,7 @@ public class AppointmentBook {
             }
         }
         return false;
+
     }
     public void printPeriod(int period)
     {
@@ -35,12 +36,17 @@ public class AppointmentBook {
             if(isMinuteFree(period, i))
             {
                 block++;
-                if(block ==  duration) {
+                if(block ==  duration)
+                {
                     return i - duration + 1;
+
                 }
-                else block = 0;
+                else
+                    block = 0;
+
             }
         return -1;
+
 
     }
     public void reserveBlock(int startMinute, int duration, int period)
